@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x23E6b4c0CC852fAE3C887A52062F5C2139bfdF69",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0x23E6b4c0CC852fAE3C887A52062F5C2139bfdF69",
+  "NETWORK": {
+    "NAME": "Polygon Mumbai",
+    "SYMBOL": "Matic",
+    "ID": 80001
+  },
+  "NFT_NAME": "SavePanther NFT",
+  "SYMBOL": "PNT",
+  "MAX_SUPPLY": 250,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": 0.075,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/panther-v3",
+  "SHOW_BACKGROUND": true
+}
