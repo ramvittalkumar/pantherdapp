@@ -99,7 +99,7 @@ a:hover, a:focus {
 }
 
 .white-text {
-    color: #FFF;
+    color: #022231;
 }
 
 ::-moz-selection {
@@ -127,6 +127,10 @@ ul, ol {
 .md-padding {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.md-mint-padding {
+    width: 100%;
 }
 
 .sm-padding {
@@ -260,12 +264,17 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	Logo
 \*------------------------------------*/
 
+.polylogo {
+    height: 20px;
+    width: 20px;
+}
+
 .navbar-brand {
     padding: 0;
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    max-height: 100px;
     display: block;
 }
 
@@ -330,7 +339,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0px 15px;
     }
     .main-nav li a {
-        font-size: 14px;
+        font-size: 18px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
@@ -339,11 +348,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 15px 0px;
     }
     #nav.nav-transparent:not(.fixed-nav) .main-nav>li>a {
-        color: #fff;
+        color: #022231;
     }
     .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
         background: transparent;
-        color: #6195FF;
+        color: #022231;
     }
     .main-nav>li>a:after {
         content: "";
@@ -1061,7 +1070,6 @@ header {
 
 .team .team-content span {
     font-size: 14px;
-    text-transform: uppercase;
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
