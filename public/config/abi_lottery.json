@@ -6,6 +6,13 @@
 	},
 	{
 		"inputs": [],
+		"name": "chosenWinner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "enter",
 		"outputs": [],
 		"stateMutability": "payable",
