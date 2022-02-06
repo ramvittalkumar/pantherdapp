@@ -92,6 +92,60 @@ export const connect = () => {
   };
 };
 
+//Lottery code starts here
+export const pickLotteryWinner = () => {
+  return async (dispatch) => {
+    dispatch(connectRequest());
+    const abiResponse = await fetch("/config/abi_lottery.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const abi = await abiResponse.json();
+    const configResponse = await fetch("/config/config.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const CONFIG = await configResponse.json();
+    const { ethereum } = window;
+    const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
+    if (metamaskIsInstalled) {
+      Web3EthContract.setProvider(ethereum);
+      let web3 = new Web3(ethereum);
+      try {
+        const accounts = await ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        const networkId = await ethereum.request({
+          method: "net_version",
+        });
+        if (networkId == CONFIG.NETWORK.ID) {
+          const SmartContractObj = new Web3EthContract(
+            abi,
+            CONFIG.LOTTERY_CONTRACT_ADDRESS
+          );
+
+          console.log(SmartContractObj);
+         
+          //Added code to invoke Chainlink enter function
+          SmartContractObj.methods.enter().send({from:accounts[0]});
+
+          // Add listeners end
+        } else {
+          dispatch(connectFailed(`Change network to ${CONFIG.NETWORK.NAME}.`));
+        }
+      } catch (err) {
+        dispatch(connectFailed("Something went wrong."));
+      }
+    } else {
+      dispatch(connectFailed("Install Metamask."));
+    }
+  };
+};
+
 export const updateAccount = (account) => {
   return async (dispatch) => {
     dispatch(updateAccountRequest({ account: account }));

@@ -8,11 +8,12 @@
   },
   "NFT_NAME": "SavePanther NFT",
   "SYMBOL": "PNT",
-  "MAX_SUPPLY": 250,
+  "MAX_SUPPLY": 125,
   "WEI_COST": 75000000000000000,
   "DISPLAY_COST": 0.075,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/panther-v3",
+  "LOTTERY_CONTRACT_ADDRESS":"0x5cAa3DF8708bCfb23Ae2866484b5e905b0eF3709",
   "SHOW_BACKGROUND": true
 }

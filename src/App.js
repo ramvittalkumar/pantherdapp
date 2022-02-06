@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
+import { pickLotteryWinner } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
@@ -150,7 +151,7 @@ function App() {
 		.then((receipt) => {
 		  console.log(receipt);
 		  setFeedback(
-			`WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+			`WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io ${CONFIG.MARKETPLACE_LINK} to view it.`
 		  );
 		  setClaimingNft(false);
 		  dispatch(fetchData(blockchain.account));
@@ -308,7 +309,7 @@ function App() {
 					<div className="overlay"></div>
 					<div className="work-content">
 						<span>Panther NFT Collection #64</span>
-						<h3>Collectables to create awareness on black panther conservation</h3>
+						<h3>Collectibles to create awareness on black panther conservation</h3>
 						<div className="work-link">
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/64.png"><i className="fa fa-search"></i></a>
 						</div>
@@ -320,7 +321,7 @@ function App() {
 					<div className="overlay"></div>
 					<div className="work-content">
 						<span>Panther NFT Collection #67</span>
-						<h3>Collectables to create awareness on black panther conservation</h3>
+						<h3>Collectibles to create awareness on black panther conservation</h3>
 						<div className="work-link">
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/67.png"><i className="fa fa-search"></i></a>
 						</div>
@@ -332,7 +333,7 @@ function App() {
 					<div className="overlay"></div>
 					<div className="work-content">
 						<span>Panther NFT Collection #69</span>
-						<h3>Collectables to create awareness on black panther conservation</h3>
+						<h3>Collectibles to create awareness on black panther conservation</h3>
 						<div className="work-link">
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/69.png"><i className="fa fa-search"></i></a>
 						</div>
@@ -344,7 +345,7 @@ function App() {
 					<div className="overlay"></div>
 					<div className="work-content">
 						<span>Panther NFT Collection #71</span>
-						<h3>Collectables to create awareness on black panther conservation</h3>
+						<h3>Collectibles to create awareness on black panther conservation</h3>
 						<div className="work-link">
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/71.png"><i className="fa fa-search"></i></a>
 						</div>
@@ -355,7 +356,7 @@ function App() {
 					<div className="overlay"></div>
 					<div className="work-content">
 						<span>Panther NFT Collection #77</span>
-						<h3>Collectables to create awareness on black panther conservation</h3>
+						<h3>Collectibles to create awareness on black panther conservation</h3>
 						<div className="work-link">
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/77.png"><i className="fa fa-search"></i></a>
 						</div>
@@ -367,7 +368,7 @@ function App() {
 					<div className="overlay"></div>
 					<div className="work-content">
 						<span>Panther NFT Collection #87</span>
-						<h3>Collectables to create awareness on black panther conservation</h3>
+						<h3>Collectibles to create awareness on black panther conservation</h3>
 						<div className="work-link">
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/87.png"><i className="fa fa-search"></i></a>
 						</div>
@@ -577,7 +578,7 @@ function App() {
             }}
           >
             Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
+            {CONFIG.NETWORK.NAME} testnet) and the correct address. Please note:
             Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
@@ -721,8 +722,7 @@ function App() {
 				
 				<div className="col-md-8 col-md-offset-2">
 					<form className="contact-form">
-					<input type="text" className="input" placeholder="Wallet Address" />
-						<StyledButton
+					<StyledButton
 						style={{
 								textAlign: "center",
 								color: "#FFF",
@@ -730,8 +730,7 @@ function App() {
 							}}
 						onClick={(e) => {
 							e.preventDefault();
-							dispatch(connect());
-							getData();
+							dispatch(pickLotteryWinner());
 						}}
 						>
 						Play Now!
