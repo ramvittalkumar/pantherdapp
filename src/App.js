@@ -227,7 +227,7 @@ function App() {
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#minting">Minting</a></li>
 					<li><a href="#team">Team</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact">Lottery</a></li>
 				</ul>
 
 			</div>
@@ -241,7 +241,7 @@ function App() {
 							<h1 className="white-text">Save Panthers</h1>
 							<p className="white-text">We're protecting black panthers an extremely endangered animal and you can help.
 							</p>
-							<button className="white-btn">Get Started!</button>
+							<button className="white-btn"><a href="#about">Get Started!</a></button>
 							
 						</div>
 					</div>
@@ -264,9 +264,10 @@ function App() {
 				<div className="col-md-4">
 					<div className="about">
 						<i className="fa fa-magic"></i>
-						<h3>Awesome Features</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<h3>Inspiration</h3>
+						<p>Panthers are listed as an Endangered Species under the Endangered Species Act. 
+							Their protection and preservation is of utmost importance. So, we decided to mint 
+							exclusive NFT collectibles for raising fund to this cause.</p>
 					</div>
 				</div>
 				<div className="col-md-4">
@@ -274,7 +275,6 @@ function App() {
 						<i className="fa fa-money"></i>
 						<h3>For A Cause</h3>
 						<p>We mint exclusive Panther NFT collectibles for raising fund</p>
-						<a href="#">Read more</a>
 					</div>
 				</div>
 
@@ -282,8 +282,7 @@ function App() {
 					<div className="about">
 						<i className="fa fa-star"></i>
 						<h3>Lottery</h3>
-						<p>Generate random Panther traits metadata and pick lottery winners for participating in lottery using our DApp</p>
-						<a href="#">Read more</a>
+						<p>We pick lottery winners for getting Panther NFT using chainlink VRF</p>
 					</div>
 				</div>
 
@@ -292,7 +291,6 @@ function App() {
 		</div>
 
 	</div>
-
 
 
 	<div id="portfolio" className="section md-padding bg-grey" style={{backgroundImage: "url('/config/images/flat.jpg')"}}>
@@ -312,7 +310,6 @@ function App() {
 						<span>Panther NFT Collection #64</span>
 						<h3>Collectables to create awareness on black panther conservation</h3>
 						<div className="work-link">
-							<a target="_blank" rel="noopener noreferrer" href="https://gateway.pinata.cloud/ipfs/QmRX3wkqm1Jz1yxrUDth7A7CpQ8oPUsPuNtJXWo3Kh38MK/64.json"><i className="fa fa-external-link"></i></a>
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/64.png"><i className="fa fa-search"></i></a>
 						</div>
 					</div>
@@ -325,7 +322,6 @@ function App() {
 						<span>Panther NFT Collection #67</span>
 						<h3>Collectables to create awareness on black panther conservation</h3>
 						<div className="work-link">
-						<a target="_blank" rel="noopener noreferrer" href="https://gateway.pinata.cloud/ipfs/QmRX3wkqm1Jz1yxrUDth7A7CpQ8oPUsPuNtJXWo3Kh38MK/67.json"><i className="fa fa-external-link"></i></a>
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/67.png"><i className="fa fa-search"></i></a>
 						</div>
 					</div>
@@ -338,7 +334,6 @@ function App() {
 						<span>Panther NFT Collection #69</span>
 						<h3>Collectables to create awareness on black panther conservation</h3>
 						<div className="work-link">
-						<a target="_blank" rel="noopener noreferrer" href="https://gateway.pinata.cloud/ipfs/QmRX3wkqm1Jz1yxrUDth7A7CpQ8oPUsPuNtJXWo3Kh38MK/69.json"><i className="fa fa-external-link"></i></a>
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/69.png"><i className="fa fa-search"></i></a>
 						</div>
 					</div>
@@ -351,7 +346,6 @@ function App() {
 						<span>Panther NFT Collection #71</span>
 						<h3>Collectables to create awareness on black panther conservation</h3>
 						<div className="work-link">
-						<a target="_blank" rel="noopener noreferrer" href="https://gateway.pinata.cloud/ipfs/QmRX3wkqm1Jz1yxrUDth7A7CpQ8oPUsPuNtJXWo3Kh38MK/71.json"><i className="fa fa-external-link"></i></a>
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/71.png"><i className="fa fa-search"></i></a>
 						</div>
 					</div>
@@ -363,7 +357,6 @@ function App() {
 						<span>Panther NFT Collection #77</span>
 						<h3>Collectables to create awareness on black panther conservation</h3>
 						<div className="work-link">
-						<a target="_blank" rel="noopener noreferrer" href="https://gateway.pinata.cloud/ipfs/QmRX3wkqm1Jz1yxrUDth7A7CpQ8oPUsPuNtJXWo3Kh38MK/77.json"><i className="fa fa-external-link"></i></a>
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/77.png"><i className="fa fa-search"></i></a>
 						</div>
 					</div>
@@ -376,7 +369,6 @@ function App() {
 						<span>Panther NFT Collection #87</span>
 						<h3>Collectables to create awareness on black panther conservation</h3>
 						<div className="work-link">
-						<a target="_blank" rel="noopener noreferrer" href="https://gateway.pinata.cloud/ipfs/QmRX3wkqm1Jz1yxrUDth7A7CpQ8oPUsPuNtJXWo3Kh38MK/87.json"><i className="fa fa-external-link"></i></a>
 							<a className="lightbox" target="_blank" rel="noopener noreferrer" href="/config/images/panther-img/87.png"><i className="fa fa-search"></i></a>
 						</div>
 					</div>
@@ -670,7 +662,7 @@ function App() {
 						</div>
 						<div className="team-content">
 							<h3>Ram Vittal</h3>
-							<span>Cloud Engineer<br/><i>Sectra Imaging IT Solutions</i></span>
+							<span>Technical Architect</span>
 						</div>
 					</div>
 				</div>
@@ -688,7 +680,7 @@ function App() {
 						</div>
 						<div className="team-content">
 							<h3>Kaushik Murali</h3>
-							<span>Project head<br/><i>Orai AI speech coach app</i></span>
+							<span>Product Designer</span>
 						</div>
 					</div>
 				</div>
@@ -706,7 +698,7 @@ function App() {
 						</div>
 						<div className="team-content">
 							<h3>Sajith Mohideen</h3>
-							<span>Sr. Software Engineer<br/><i>Global Soft Systems Inc</i></span>
+							<span>Sr. Developer</span>
 						</div>
 					</div>
 				</div>
@@ -722,41 +714,28 @@ function App() {
 		<div className="container">
 
 			<div className="row">
-
 				<div className="section-header text-center">
-					<h2 className="title">Get in touch</h2>
+					<h2 className="title">Exclusive Mega Lottery</h2>
+					<span>Power up your chance to win exclusive Panther NFTs. Will you be our next lucky winner?</span>
 				</div>
-				<div className="col-sm-4">
-					<div className="contact">
-						<i className="fa fa-phone"></i>
-						<h3>Phone</h3>
-						<p>512-421-3940</p>
-					</div>
-				</div>
-
-				<div className="col-sm-4">
-					<div className="contact">
-						<i className="fa fa-envelope"></i>
-						<h3>Email</h3>
-						<p>email@support.com</p>
-					</div>
-				</div>
-
-				<div className="col-sm-4">
-					<div className="contact">
-						<i className="fa fa-map-marker"></i>
-						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
-					</div>
-				</div>
-
+				
 				<div className="col-md-8 col-md-offset-2">
 					<form className="contact-form">
-						<input type="text" className="input" placeholder="Name" />
-						<input type="email" className="input" placeholder="Email" />
-						<input type="text" className="input" placeholder="Subject" />
-						<textarea className="input" placeholder="Message"></textarea>
-						<button className="main-btn">Send message</button>
+					<input type="text" className="input" placeholder="Wallet Address" />
+						<StyledButton
+						style={{
+								textAlign: "center",
+								color: "#FFF",
+								backgroundColor: "#6195FF"
+							}}
+						onClick={(e) => {
+							e.preventDefault();
+							dispatch(connect());
+							getData();
+						}}
+						>
+						Play Now!
+						</StyledButton>
 					</form>
 				</div>
 
@@ -781,14 +760,14 @@ function App() {
 						<a target="_blank" href="https://polygon.technology" rel="noreferrer">
 							<span class="text-md block flex items-center justify-center"> <img src="/config/images/polygon.da7b877d.svg" className="polylogo" alt=""/> Powered by Polygon</span>
 						</a><br/>
-						<span class="text-xs">SavePanther </span>
+						<span class="text-xs">SavePanther Initiative</span>
 					</div>
 
 					{/*<div className="footer-logo">
 						<a href="index.html"><img src="/config/images/logo-alt.png" alt="logo" /></a>
 					</div>*/}
 					<div className="footer-copyright">
-						<p>Copyright © 2022. All Rights Reserved.</p>
+						<p>ETHGlobal Hackathon 2022</p>
 					</div>
 
 				</div>
