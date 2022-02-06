@@ -214,7 +214,7 @@ function App() {
 						<a href="index.html">
 							<img className="logo" src="/config/images/logo.png" alt="logo" />
 							<img className="logo-alt" src="/config/images/logo.png" alt="logo" />
-						</a>
+						</a> 
 					</div>
 
 					<div className="nav-collapse">
@@ -224,7 +224,7 @@ function App() {
 
 				<ul className="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a href="#about">About</a></li> 
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#minting">Minting</a></li>
 					<li><a href="#team">Team</a></li>
@@ -386,7 +386,7 @@ function App() {
 		
 		
 
-	<div id="minting" className="section md-padding">
+	<div id="minting" className="section md-mint-padding" style={{backgroundImage: "url('/config/images/bg.png')"}}>
 
 		<div className="container">
 		<s.Screen>
@@ -394,7 +394,6 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
@@ -481,6 +480,11 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
+						style={{
+							textAlign: "center",
+							color: "#ffffff",
+							backgroundColor: "#ebbd05ee"
+						}}
                       onClick={(e) => {
                         e.preventDefault();
                         dispatch(connect());
@@ -516,7 +520,12 @@ function App() {
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
+						style={{
+							textAlign: "center",
+							color: "#ffffff",
+							backgroundColor: "#ebbd05ee",
+							lineHeight: 0.4
+						}}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -536,6 +545,11 @@ function App() {
                       </s.TextDescription>
                       <s.SpacerMedium />
                       <StyledRoundButton
+						style={{
+							textAlign: "center",
+							color: "#ffffff",
+							backgroundColor: "#ebbd05ee"
+						}}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -548,6 +562,11 @@ function App() {
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
+						style={{
+							textAlign: "center",
+							color: "#ffffff",
+							backgroundColor: "#ebbd05ee"
+						}}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
