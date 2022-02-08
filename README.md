@@ -36,6 +36,11 @@ Technologies
 - npm start
 - Note: Mac users need to add argument --openssl-legacy-provider inside "start": "react-scripts --openssl-legacy-provider start"
 
+## Developers
+Kaushik (kaushik.mrl@gmail.com)
+Ram Vittal (ramvittal@gmail.com)
+Sajith Mohideen (sajith.wanderer@gmail.com)
+
 ## Related source code repo
 
 - Dapp - https://github.com/ramvittalkumar/pantherdapp
