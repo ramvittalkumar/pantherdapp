@@ -15,6 +15,7 @@
     "web3-eth-contract": "^1.5.2"
   },
   "scripts": {
+    "__Comment__":"Mac users need to add argument --openssl-legacy-provider inside start react-scripts --openssl-legacy-provider start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
