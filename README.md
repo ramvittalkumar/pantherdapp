@@ -1,6 +1,8 @@
 # Panther
 
-SavePanther is an initiative to create awareness of endangered Panther species by creating unique Panther NFT Collectibles
+Welcome to Save Panther, a community dedicated to using NFTs, art, and cutting-edge tech to raise money and create awareness to save Panthers across the globe.
+
+If you're a nature lover, artist, entrepreneur, or creator, we'd love to have you in our Tribe. 
 
 <img src="./logo.png"/>
 
