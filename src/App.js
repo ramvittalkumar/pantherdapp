@@ -239,8 +239,11 @@ function App() {
 
 					<div className="col-md-10 col-md-offset-1">
 						<div className="home-content">
-							<h1 className="white-text">Save Panthers</h1>
-							<p className="white-text">We're protecting black panthers an extremely endangered animal and you can help.
+							<h1 className="white-text">Save Panther</h1>
+							<p className="white-text">Welcome to Save Panther, a community dedicated to using NFTs, art, and cutting-edge <br /> tech to raise money 
+								and create awareness to save Panthers across the globe.
+
+							<br/>If you're a nature lover, artist, entrepreneur, or creator, we'd love to have you in our Tribe
 							</p>
 							<button className="white-btn"><a href="#about">Get Started!</a></button>
 							
@@ -778,7 +781,7 @@ function App() {
 						<a target="_blank" href="https://polygon.technology" rel="noreferrer">
 							<span class="text-md block flex items-center justify-center"> <img src="/config/images/polygon.da7b877d.svg" className="polylogo" alt=""/> Powered by Polygon</span>
 						</a><br/>
-						<span class="text-xs">SavePanther Initiative</span>
+						<span class="text-xs">SavePanther - A Global Initiative</span>
 					</div>
 
 					{/*<div className="footer-logo">
